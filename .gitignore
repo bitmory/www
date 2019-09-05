@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+workspace.xml
 platforms/
 dist/
 npm-debug.log*
