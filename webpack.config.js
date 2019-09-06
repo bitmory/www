@@ -15,22 +15,22 @@ module.exports = {
                 test: /\.css$/,   // 正则表达式，表示.css后缀的文件
                 use: ['style-loader','css-loader']   // 针对css文件使用的loader，注意有先后顺序，数组项越靠后越先执行
             },
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: 'url-loader',
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: './img',
-                    publicPath: './img'
-                }
-            },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/,
+            //     loader: 'url-loader',
+            //     options: {
+            //         name: '[name].[ext]',
+            //         outputPath: './img',
+            //         publicPath: './img'
+            //     }
+            // },
             {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
-                    outputPath: './img',
-                    publicPath: './img'
+                    outputPath: './img/team',
+                    publicPath: './img/team'
                 }
             },
             {
@@ -42,8 +42,8 @@ module.exports = {
                 use: ['url-loader']
             },
             {
-                test: /.html$/, //所有html结尾的文件添加此 loader 处理
-                use: ["html-withimg-loader"]
+                test: /\.html$/, //所有html结尾的文件添加此 loader 处理
+                loader: 'html-withimg-loader'
             }
         ]
     },
