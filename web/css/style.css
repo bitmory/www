@@ -71,7 +71,7 @@ ul, ol{
 	moz-padding: 0;
 }
 .navbar-header img {
-	width: 80px;
+	width: 150px;
 }
 /* Navigation */
 #tf-menu {
@@ -92,7 +92,7 @@ font-weight: 900;
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
-	font-size: 12px;
+	font-size: 22px;
 	letter-spacing: 1px;
 }
 .on {

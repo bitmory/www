@@ -5,10 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
 
     entry:{
-        'js/index':'./web/js/index.js'  //入口文件
-
-        //我们的是多页面项目，多页面入口配置就是这样，
-        //app/src/page下可能还会有很多页面，照着这样配置就行
+        'js/index':'./web/js/index.js'  //入口文件行
 
     },
     module: {
@@ -22,14 +19,18 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'url-loader',
                 options: {
-                    name: './img/[name].[ext]'
+                    name: '[name].[ext]',
+                    outputPath: './img',
+                    publicPath: './img'
                 }
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
-                    name: './img/[name].[ext]'
+                    name: '[name].[ext]',
+                    outputPath: './img',
+                    publicPath: './img'
                 }
             },
             {
