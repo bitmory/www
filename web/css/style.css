@@ -71,7 +71,8 @@ ul, ol{
 	moz-padding: 0;
 }
 .navbar-header img {
-	width: 150px;
+	width: 216px;
+	margin-top: -23px;
 }
 /* Navigation */
 #tf-menu {
@@ -92,7 +93,7 @@ font-weight: 900;
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
-	font-size: 22px;
+	font-size: 16px;
 	letter-spacing: 1px;
 }
 .on {
@@ -184,7 +185,7 @@ font-weight: 900;
 	transition: 0.2s all;
 }
 .dropdown-active{
-	right: 0 !important;
+	right: -17px !important;
 }
 .main-nav>.has-dropdown>.dropdown {
 	top: 100%;
@@ -195,7 +196,7 @@ font-weight: 900;
 }
 .dropdown li a {
 	display: block;
-	font-size: 22px;
+	font-size: 16px;
 	border-top: 1px solid rgba(250, 250, 250, 0.1);
 	padding: 10px 0px;
 }
